@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eko-Platforma | Kirish va Ro'yxatdan o'tish</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <div class="auth-page">
+    <div class="auth-card">
+      
+      <!-- Tab menyu: Kirish va Ro'yxatdan o'tish o'rtasida o'tish -->
+      <div class="auth-tabs">
+        <button type="button" id="loginTab" class="tab-btn active" onclick="switchAuthTab('login')">Kirish</button>
+        <button type="button" id="registerTab" class="tab-btn" onclick="switchAuthTab('register')">Ro'yxatdan o'tish</button>
+      </div>
+      
+      <form id="loginForm" class="auth-form" onsubmit="handleLoginSubmit(event)">
+        <h2><i class="fas fa-sign-in-alt"></i> Tizimga Kirish</h2>
+        <p>Eko-loyihalar platformasiga xush kelibsiz</p>
+
+        <div class="form-group">
+          <label for="loginEmail">E-mail pochta</label>
+          <input type="email" id="loginEmail" placeholder="masalan@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="loginPassword">Parol</label>
+          <input type="password" id="loginPassword" placeholder="**" required>
+        </div>
+
+        <button type="submit" class="auth-btn">Kirish <i class="fas fa-arrow-right"></i></button>
+      </form>
+
+      <!-- 2. RO'YXATDAN O'TISH FORMASI -->
+      <form id="registerForm" class="auth-form hidden" onsubmit="handleRegisterSubmit(event)">
+        <h2><i class="fas fa-user-plus"></i> Yangi Hisob Yaratish</h2>
+        <p>Platformamizga qo'shiling va eko-loyihalarda qatnashing</p>
+
+        <div class="form-group">
+          <label for="regFullName">Ism va Familiya</label>
+          <input type="text" id="regFullName" placeholder="Ali Valiyev" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regRole">Sinf / Lavozim</label>
+          <input type="text" id="regRole" placeholder="Masalan: 9-A sinf o'quvchisi" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regEmail">E-mail pochta</label>
+          <input type="email" id="regEmail" placeholder="masalan@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regPassword">Parol o'ylab toping</label>
+          <input type="password" id="regPassword" placeholder="Kamida 6 ta belgi" minlength="6" required>
+        </div>
+
+        <button type="submit" class="auth-btn">Ro'yxatdan o'tish <i class="fas fa-check-circle"></i></button>
+      </form>
+      
+      <div class="divider">
+        <span>yoki email orqali</span>
+      </div>
+      
+      <div class="social-auth">
+        <button type="button" class="social-btn google-btn" onclick="loginWithGoogle()">
+          <i class="fab fa-google"></i> Google bilan kirish
+        </button>
+        <button type="button" class="social-btn github-btn" onclick="loginWithGithub()">
+          <i class="fab fa-github"></i> GitHub bilan kirish
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="project.js"></script>
+</body>
+</html>

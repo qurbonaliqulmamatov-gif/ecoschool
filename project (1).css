@@ -1,0 +1,166 @@
+.auth-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0b1d17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.auth-card {
+  background-color: #122921;
+  border: 1px solid #1a382e;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.auth-tabs {
+  display: flex;
+  background-color: #0b1d17;
+  border-radius: 12px;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+
+.tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #a3b8b0;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #2ecc71;
+  color: #0b1d17;
+}
+
+.auth-form h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-form h2 i {
+  color: #2ecc71;
+}
+
+.auth-form p {
+  color: #a3b8b0;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.auth-form.hidden {
+  display: none;
+}
+
+.auth-form .form-group {
+  margin-bottom: 18px;
+}
+
+.auth-form label {
+  display: block;
+  color: #a3b8b0;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #1a382e;
+  background-color: #0b1d17;
+  color: #ffffff;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.auth-form input:focus {
+  border-color: #2ecc71;
+}
+
+.auth-btn {
+  width: 100%;
+  background-color: #2ecc71;
+  color: #0b1d17;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.auth-btn:hover {
+  background-color: #27ae60;
+}
+
+.social-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #1a382e;
+  background-color: #0b1d17;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.google-btn:hover {
+  background-color: #ea4335;
+  color: #fff;
+}
+
+.github-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.divider {
+  text-align: center;
+  border-bottom: 1px solid #1a382e;
+  line-height: 0.1em;
+  margin: 20px 0;
+}
+
+.divider span {
+  background: #122921;
+  padding: 0 10px;
+  color: #a3b8b0;
+  font-size: 12px;
+}

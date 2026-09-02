@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ecoschool, denov 2-imi, denov2imi, denov ecology, eko maktab, green school denov, denov ecoschool, denov2imi ecoschool">
+    <meta name="description" content="Denov 2-IMI maktabining rasmiy ekologik platformasi. Eko-startaplar,yangiliklar va interaktiv kalkulyator">
+    <title> EcoSchool Denov | Denov 2-imi</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    
+    <meta name="theme-color" content="#OD2818">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Denov 2-IMI EcoSchool Logo" class="logo-img">
+          <span class="logo-text">EcoSchool Denov</span>
+        </div>
+        
+        <ul class="nav-links">
+          <li><a href="home.html" class="active">Bosh sahifa</a></li>
+          <li><a href="about.html">Biz haqimizda</a></li>
+          <li><a href="ecosysteym.html">Eco-Systeym</a></li>
+          <li><a href="projects.html">Loyihalar</a></li>
+        </ul>
+      </nav>
+</header>
+<section id="home" class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1>Denov 2-IMI <span>EcoSchool</span> Loyihasi</h1>
+      <p>Yashil kelajak sari birgalikda! Ekologik madaniyatni oshirish va tabiatni asrashga qaratilgan innovatsion platforma.</p>
+      <div class="hero-btns">
+        <a href="projects.html#" class="btn btn-primary">Loyihalarimiz</a>
+        <a href="ecosysteym.html#" class="btn btn-secondary">Eco-Tizim haqida</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/ecoschool.png" alt="EcoSchool Denov">
+    </div>
+  </div>
+</section>
+
+<section class="tracker-section">
+  <div class="tracker-container">
+    <h2 class="tracker-title"><i class="fas fa-chart-pie"></i> Flora Inventory Tracker</h2>
+    
+    <div class="tracker-grid">
+      <div class="tracker-card">
+        <i class="fas fa-tree icon-tree"></i>
+        <h3>Ekilgan daraxtlar</h3>
+        <p class="stat-number"  data-target="454">0</p>
+      </div>
+
+      <div class="tracker-card">
+        <i class="fas fa-seedling icon-flower"></i>
+        <h3>Gullar va o'simliklar</h3>
+        <p class="stat-number" data-target="501">0</p>
+      </div>
+
+      <div class="tracker-card">
+        <i class="fas fa-solar-panel icon-solar"></i>
+        <h3>Quyosh panellari (24 m²)</h3>
+        <p class="stat-number" data-target="12">0</p>
+      </div>
+
+      <div class="tracker-card impact-card">
+        <i class="fas fa-wind icon-air"></i>
+        <h3>Havo sifatiga ta'siri</h3>
+        
+        <div class="impact-box">
+          <span class="impact-value">29.7</span>
+          <span class="impact-label">KG CO₂ yutilishi / kun</span>
+        </div>
+
+        <div class="impact-box">
+          <span class="impact-value">155.3</span>
+          <span class="impact-label">KG O₂ ishlab chiqarilishi / kun</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="eco-tips-section">
+  <div class="eco-tips-container">
+    <h2 class="section-title"><i class="fas fa-hand-holding-water"></i> Ekologik foydali odatlar</h2>
+    <p class="section-subtitle">Tabiatni asrash har birimizning kichik qadamlarimizdan boshlanadi</p>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-faucet"></i></div>
+        <h3>Suvni tejash</h3>
+        <p>Tish yuvayotganda jo'mrakni o'chirib qo'ying. Bu har safar 6 litrgacha suvni tejaydi.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>Energiyani tejash</h3>
+        <p>Xonadan chiqayotganda chiroqni o'chiring va quvvatlagichlarni rozetkadan sug'urib qo'ying.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-recycle"></i></div>
+        <h3>Chiqindini saralash</h3>
+        <p>Plastik va qog'ozlarni alohida yig'ib, Eco-Coin olish uchun maktab punktiga topshiring.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<section class="eco-interactive-section">
+  <div class="interactive-container">
+    
+    <div class="interactive-card calculator-card">
+      <h3><i class="fas fa-calculator"></i> Sizning Eko-Hissangiz</h3>
+      <p>Bugun qancha plastik yoki qog'oz topshirdingiz?</p>
+      
+      <div class="input-group">
+        <input type="number" id="plasticInput" placeholder="Plastik miqdori (kg)">
+        <button onclick="calculateEcoCoins()" class="calc-btn">Hisoblash</button>
+      </div>
+      
+      <div class="calc-result" id="calcResult">
+        Ishlab topiladigan Eco-Coin: <span id="coinOutput">0</span>
+      </div>
+    </div>
+
+    <div class="interactive-card daily-quests">
+      <h3><i class="fas fa-tasks"></i> Kunlik Eko-Vazifalar</h3>
+      <ul class="quest-list">
+        <li>
+          <input type="checkbox" id="quest1">
+          <label for="quest1">Maktab hovlisidan 3 ta plastik idish yig'ish</label>
+        </li>
+        <li>
+          <input type="checkbox" id="quest2">
+          <label for="quest2">Xonadan chiqayotganda chiroqni o'chirish</label>
+        </li>
+        <li>
+          <input type="checkbox" id="quest3">
+          <label for="quest3">O'z tuvakli o'simligingizni sug'orish</label>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Denov 2-IMI EcoSchool Logo">
+        <span>EcoSchool</span>
+      </div>
+      <p>Denov 2-sonli IMI o'quvchilarining ekologik madaniyatini oshirish va yashil kelajak barpo etish platformasi.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Navigatsiya</h4>
+      <ul>
+        <li><a href="#home">Bosh sahifa</a></li>
+        <li><a href="#about">Biz haqimizda</a></li>
+        <li><a href="#ecocoin-info">Eco-Coin</a></li>
+        <li><a href="#projects">Loyihalar</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Eko-Tizim</h4>
+      <ul>
+        <li><a href="#tracker">Flora Tracker</a></li>
+        <li><a href="#tips">Odatlar</a></li>
+        <li><a href="#calc">Kalkulyator</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Aloqa</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Surxondaryo viloyati, Denov tumani</p>
+      <p><i class="fas fa-envelope"></i> info@denov2imi.uz</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Denov 2-IMI EcoSchool. Barcha huquqlar himoyalangan.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+  </body>
+</html>

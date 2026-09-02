@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ecoschool, denov 2-imi, denov2imi, denov ecology, eko maktab, green school denov, denov ecoschool, denov2imi ecoschool">
+    <meta name="description" content="Denov 2-IMI maktabining rasmiy ekologik platformasi. Eko-startaplar, yangiliklar va interaktiv kalkulyator">
+    <title>Yangi Loyiha Qo'shish | EcoSchool Denov</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    
+    <meta name="theme-color" content="#0D2818">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Denov 2-IMI EcoSchool Logo">
+          <span class="logo-text">EcoSchool</span>
+        </div>
+        
+        <ul class="nav-links">
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="about.html">Biz haqimizda</a></li>
+          <li><a href="ecosystem.html">Eco-System</a></li>
+          <li><a href="projects.html" class="active">Loyihalar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="add-project-section" style="padding: 40px 20px;">
+      <div class="add-project-container" style="max-width: 600px; margin: 0 auto;">
+        <div class="add-project-card" style="text-align: left; padding: 30px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <h2 style="margin-bottom: 20px; color: #0D2818;"><i class="fas fa-plus-circle"></i> Yangi Eko-Loyiha Qo'shish</h2>
+          
+          <form id="newProjectForm">
+            <div style="margin-bottom: 15px;">
+              <label for="projectTitle" style="display: block; font-weight: bold; margin-bottom: 5px;">Loyiha nomi</label>
+              <input type="text" id="projectTitle" placeholder="Masalan: Maktab bog'ini sug'orish tizimi" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+              <label for="projectCategory" style="display: block; font-weight: bold; margin-bottom: 5px;">Kategoriya</label>
+              <select id="projectCategory" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+                <option value="energiya">Yashil Energiya</option>
+                <option value="chiqindi">Chiqindini Saralash</option>
+                <option value="flora">Yashil Hudud va Flora</option>
+                <option value="boshqa">Boshqa</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+              <label for="projectDesc" style="display: block; font-weight: bold; margin-bottom: 5px;">Loyiha tavsifi</label>
+              <textarea id="projectDesc" rows="4" placeholder="Loyiha maqsadi va kutilayotgan natijalar haqida yozing..." required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px; background-color: #0D2818; color: #fff; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">
+              Loyihani Yuborish <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Denov 2-IMI EcoSchool Logo">
+            <span>EcoSchool</span>
+          </div>
+          <p>Denov 2-sonli IMI o'quvchilarining ekologik madaniyatini oshirish va yashil kelajak barpo etish platformasi.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigatsiya</h4>
+          <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="ecosystem.html">Eco-Coin</a></li>
+            <li><a href="projects.html">Loyihalar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Eko-Tizim</h4>
+          <ul>
+            <li><a href="index.html#tracker">Flora Tracker</a></li>
+            <li><a href="index.html#tips">Odatlar</a></li>
+            <li><a href="index.html#calc">Kalkulyator</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Aloqa</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Surxondaryo viloyati, Denov tumani</p>
+          <p><i class="fas fa-envelope"></i> info@denov2imi.uz</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Denov 2-IMI EcoSchool. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

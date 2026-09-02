@@ -1,0 +1,353 @@
+/* ==========================================
+   1. UMUMIY SOZLAMALAR VA REZERV STILLAR
+   ========================================== */
+:root {
+  --primary-color: #0D2818;
+  --primary-light: #166534;
+  --accent-color: #2e7d32;
+  --bg-light: #f4f7f5;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --gold-color: #fbc02d;
+  --border-color: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==========================================
+   2. HEADER VA NAVBAR
+   ========================================== */
+.main-header {
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ==========================================
+   3. LOYIHALAR VA KARTALAR (Projects & Store)
+   ========================================== */
+.projects-section,
+.eco-store-section,
+.add-project-section,
+.auth-section,
+.eco-chat-section {
+  padding: 40px 20px;
+}
+
+.projects-container,
+.eco-store-container,
+.add-project-container,
+.eco-chat-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-header,
+.store-header,
+.chat-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects-header h2,
+.store-header h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.projects-grid,
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card,
+.store-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-status {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.status-active {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-completed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.project-icon,
+.store-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.project-progress {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin: 15px 0 8px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--accent-color);
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ==========================================
+   4. FORMALAR VA TIZIMGA KIRISH (Forms & Auth)
+   ========================================== */
+.auth-container,
+.add-project-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.btn,
+.add-project-btn,
+.buy-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.add-project-btn:hover,
+.buy-btn:hover {
+  background-color: var(--primary-light);
+}
+
+/* ==========================================
+   5. ECO-CHAT VA SIMVOL status
+   ========================================== */
+.symbol-bar {
+  background: #e8f5e9;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c8e6c9;
+}
+
+#chatMessages {
+  height: 400px;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ==========================================
+   6. FOOTER
+   ========================================== */
+.main-footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding-top: 40px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 0 20px 30px 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  height: 35px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* ==========================================
+   7. ADAPTIV TASVIM (RESPONSIVE)
+   ========================================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .symbol-bar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ecoschool, denov 2-imi, denov2imi, denov ecology, eko maktab, green school denov, denov ecoschool, denov2imi ecoschool">
+    <meta name="description" content="Denov 2-IMI maktabining rasmiy ekologik platformasi. Eco-Chat suhbatlashish sahifasi">
+    <title>Eco-Chat | EcoSchool Denov</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    
+    <meta name="theme-color" content="#0D2818">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Denov 2-IMI EcoSchool Logo">
+          <span class="logo-text">EcoSchool</span>
+        </div>
+        
+        <ul class="nav-links">
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="about.html">Biz haqimizda</a></li>
+          <li><a href="ecosystem.html" class="active">Eco-System</a></li>
+          <li><a href="projects.html">Loyihalar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="eco-chat-section" style="padding: 40px 20px;">
+      <div class="eco-chat-container" style="max-width: 800px; margin: 0 auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden;">
+        
+        <!-- Header & Simvol status bar -->
+        <div class="chat-header" style="background: #0D2818; color: #fff; padding: 20px; text-align: center;">
+          <h2 style="margin: 0; font-size: 1.5rem;"><i class="fas fa-comments"></i> Eco-Chat Maydoni</h2>
+          <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.9rem;">Eko-faollar va o'quvchilar bilan real vaqt rejimida fikr almashing</p>
+        </div>
+
+        <div class="symbol-bar" style="background: #e8f5e9; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #c8e6c9;">
+          <div style="font-size: 0.9rem; color: #1b5e20; font-weight: 600;">
+            <i class="fas fa-font"></i> Qolgan simvollaringiz: <span id="remainingSymbols" style="font-weight: 800; color: #2e7d32; font-size: 1rem;">---</span> ta
+          </div>
+          <a href="eco-store.html" style="font-size: 0.85rem; color: #15803d; text-decoration: none; font-weight: bold; background: #fff; padding: 5px 12px; border-radius: 20px; border: 1px solid #a5d6a7;">
+            Simvol olish <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+
+        <!-- Chat xabarlari ko'rinadigan joy -->
+        <div id="chatMessages" style="height: 400px; padding: 20px; overflow-y: auto; background: #f9f9f9; display: flex; flex-direction: column; gap: 12px;">
+          <div style="text-align: center; color: #888; margin-top: 20px;">Xabarlar yuklanmoqda...</div>
+        </div>
+
+        <!-- Xabar yuborish formasi -->
+        <form id="chatForm" style="display: flex; gap: 10px; padding: 15px; background: #fff; border-top: 1px solid #eee;">
+          <input type="text" id="chatInput" placeholder="Xabaringizni yozing..." required style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 6px; outline: none;">
+          <button type="submit" id="sendBtn" style="padding: 12px 24px; background: #0D2818; color: #fff; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">
+            Yuborish <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Denov 2-IMI EcoSchool Logo">
+            <span>EcoSchool</span>
+          </div>
+          <p>Denov 2-sonli IMI o'quvchilarining ekologik madaniyatini oshirish va yashil kelajak barpo etish platformasi.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigatsiya</h4>
+          <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="ecosystem.html">Eco-Coin</a></li>
+            <li><a href="projects.html">Loyihalar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Eko-Tizim</h4>
+          <ul>
+            <li><a href="index.html#tracker">Flora Tracker</a></li>
+            <li><a href="index.html#tips">Odatlar</a></li>
+            <li><a href="index.html#calc">Kalkulyator</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Aloqa</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Surxondaryo viloyati, Denov tumani</p>
+          <p><i class="fas fa-envelope"></i> info@denov2imi.uz</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Denov 2-IMI EcoSchool. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </footer>
+
+    <!-- Firebase va Chat mantiqlari JS fayliga yuklanishi uchun ulash -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
